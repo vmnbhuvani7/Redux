@@ -8,18 +8,22 @@ import IceCreamContainer from './Component/IceCreamContainer';
 import NewCakeContainer from './Component/NewCakeContainer';
 import ItemContainer from './Component/ItemContainer';
 import UserContainer from './Component/UserContainer';
+import MainRouter from './MainRouter';
+import Reselect from './Component/Reselect';
 
 function App() {
   return (
+    // <MainRouter />
     <Provider store={store}>
       <div className="App">
-        <CakeContainer />
+        {/* <CakeContainer />
         <HookCakeContainer />
         <IceCreamContainer />
         <NewCakeContainer />
         <ItemContainer cake />
-        <ItemContainer />
-        <UserContainer />
+        <ItemContainer /> */}
+        {/* <UserContainer /> */}
+        <Reselect />
       </div>
     </Provider>
   );

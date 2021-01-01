@@ -9,4 +9,7 @@ const store = createStore(rootRouter, composeWithDevTools(
     applyMiddleware(logger, thunk)
 ))
 
+// store.subscribe(() => {
+//     localStorage.setItem('reduxState', JSON.stringify(store.getState()))
+// })
 export default store
